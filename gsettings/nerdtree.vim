@@ -1,0 +1,1 @@
+let NERDTreeShowLineNumbers=0
