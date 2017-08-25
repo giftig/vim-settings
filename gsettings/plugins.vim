@@ -7,6 +7,7 @@ call pathogen#helptags()
 
 " Install extra plugins with vundle
 call vundle#begin()
+  Plugin 'kien/ctrlp.vim'
   Plugin 'ensime/ensime-vim'
   Plugin 'vim-scripts/tabmerge'
   Plugin 'xolox/vim-misc'
