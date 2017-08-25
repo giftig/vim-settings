@@ -8,5 +8,8 @@ source ~/.vim/gsettings/syntax.vim
 source ~/.vim/gsettings/ensime.vim
 source ~/.vim/gsettings/nerdtree.vim
 
+" Useful utils
+source ~/.vim/gsettings/utils/git-buffers.vim
+
 filetype plugin indent on
 syntax on
