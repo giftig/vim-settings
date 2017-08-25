@@ -13,3 +13,6 @@ set t_Co=256 " Colours in terminal vim in linux
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=black guibg=black
 autocmd BufWinEnter,BufWrite * match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * set number
+
+" Tab completion menu
+set wildchar=<tab> wildmenu wildmode=full
