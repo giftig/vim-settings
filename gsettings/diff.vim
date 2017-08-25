@@ -11,6 +11,4 @@ elseif has("gui_running")
   autocmd VimEnter *.java set lines=60 columns=105
   autocmd VimEnter *.js set lines=60 columns=105
   autocmd VimEnter *.xml set lines=60 columns=105
-  autocmd VimEnter Jenkinsfile set filetype=groovy
 endif
-
