@@ -1,16 +1,30 @@
 " CUSTOM KEY BINDINGS
 let mapleader = ","
 
+" PLUGIN MAPPINGS
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>? :EnDocBrowse<CR>
 nnoremap <leader>! :EnSymbol<CR>
-nnoremap <leader>ye :let @+=expand("%:p")<CR>
-nnoremap <leader>s  :wa<Bar>exe "mksession! " . v:this_session<CR>:so ~/sessions/
-nnoremap <leader><space> :%s/\v\s+$//<CR>
 
 " Remap macro binding so it doesn't conflict with comment-toggle
 nnoremap <c-q> q
 nnoremap <T-q> dd
+
+" USEFUL SHORTCUT MAPPINGS
+
+" ,ye = copy current filename to + register
+nnoremap <leader>ye :let @+=expand("%:p")<CR>
+" ,s = save session and start a session-open command
+nnoremap <leader>s  :wa<Bar>exe "mksession! " . v:this_session<CR>:so ~/sessions/
+" ,<space> = remove all trailing whitespace in file
+nnoremap <leader><space> :%s/\v\s+$//<CR>
+
+" ,<left> and ,<right> = left and right through tabs
+nnoremap <leader><left> :tabp<CR>
+nnoremap <leader><right> :tabn<CR>
+" ,<up> and ,<down> = previous and next buffers in buffers list
+nnoremap <leader><up> :bn<CR>
+nnoremap <leader><down> :bp<CR>
 
 " CUSTOM COMMANDS
 command FmtJson %!python -mjson.tool
