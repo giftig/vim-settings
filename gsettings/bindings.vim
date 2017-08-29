@@ -3,6 +3,7 @@ let mapleader = ","
 
 " PLUGIN MAPPINGS
 nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>m :NERDTreeFind<CR>
 nnoremap <leader>? :EnDocBrowse<CR>
 nnoremap <leader>! :EnSymbol<CR>
 
