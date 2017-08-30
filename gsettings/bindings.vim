@@ -37,4 +37,4 @@ autocmd FileType json nnoremap <F7> :FmtJson<CR>
 autocmd FileType xml nnoremap <F7> :FmtXml<CR>
 
 " Create a groupId / artifactId / version block for POMs using F8
-autocmd FileType xml noremap <F8> <ESC>o<groupId></groupId><CR><artifactId></artifactId><CR><version></version><ESC><UP><UP>Bew<RIGHT>
+autocmd FileType xml nnoremap <F8> <ESC>o<groupId></groupId><CR><artifactId></artifactId><CR><version></version><ESC><UP><UP>Bew<RIGHT>
