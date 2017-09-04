@@ -17,6 +17,10 @@ autocmd BufWinEnter * set number
 " Tab completion menu
 set wildchar=<tab> wildmenu wildmode=full
 
+" More natural split positioning
+set splitright
+set splitbelow
+
 " Large if requested, or else filetype-specific
 if has("gui_running")
   set lines=60 columns=240
