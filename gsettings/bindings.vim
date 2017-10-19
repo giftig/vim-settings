@@ -6,6 +6,7 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>m :NERDTreeFind<CR>
 nnoremap <leader>? :EnDocBrowse<CR>
 nnoremap <leader>! :EnSymbol<CR>
+nnoremap <leader>. :EnDeclaration<CR>
 
 " Remap macro binding so it doesn't conflict with comment-toggle
 nnoremap <c-q> q
