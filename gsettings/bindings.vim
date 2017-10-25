@@ -30,6 +30,8 @@ nnoremap <leader><right> :tabn<CR>
 nnoremap <leader><up> :bn<CR>
 nnoremap <leader><down> :bp<CR>
 
+nnoremap <leader>j :call GotoJump()<CR>
+
 " CUSTOM COMMANDS
 command FmtJson %!python -mjson.tool
 command FmtXml %!~/scripts/format_xml.py

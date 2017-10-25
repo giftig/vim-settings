@@ -10,6 +10,7 @@ source ~/.vim/gsettings/nerdtree.vim
 
 " Useful utils
 source ~/.vim/gsettings/utils/git-buffers.vim
+source ~/.vim/gsettings/utils/goto-jump.vim
 source ~/.vim/gsettings/utils/quickfind.vim
 
 filetype plugin indent on
