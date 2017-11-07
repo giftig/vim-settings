@@ -11,6 +11,7 @@ call vundle#begin()
   Plugin 'ensime/ensime-vim'
   Plugin 'junegunn/vim-emoji'
   Plugin 'vim-scripts/tabmerge'
+  Plugin 'airblade/vim-gitgutter'
   Plugin 'xolox/vim-misc'
   Plugin 'xolox/vim-notes'
 call vundle#end()
