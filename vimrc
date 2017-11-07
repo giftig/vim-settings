@@ -6,9 +6,11 @@ source ~/.vim/gsettings/syntax.vim
 " Specific plugin config and hacks
 source ~/.vim/gsettings/ctrlp.vim
 source ~/.vim/gsettings/ensime.vim
+source ~/.vim/gsettings/gitgutter.vim
 source ~/.vim/gsettings/nerdtree.vim
 
 " Useful utils
+source ~/.vim/gsettings/utils/emoji-helper.vim
 source ~/.vim/gsettings/utils/git-buffers.vim
 source ~/.vim/gsettings/utils/goto-jump.vim
 source ~/.vim/gsettings/utils/quickfind.vim

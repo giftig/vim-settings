@@ -32,6 +32,10 @@ nnoremap <leader><down> :bp<CR>
 
 nnoremap <leader>j :call GotoJump()<CR>
 
+" ,e = autoreplace emoji on the current line
+nnoremap <leader>er :ReplaceEmojisOnLine<CR>
+nnoremap <leader>el <c-t>:PrintEmojis<CR>
+
 " CUSTOM COMMANDS
 command FmtJson %!python -mjson.tool
 command FmtXml %!~/scripts/format_xml.py
