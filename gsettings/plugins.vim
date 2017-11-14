@@ -9,10 +9,14 @@ call pathogen#helptags()
 call vundle#begin()
   Plugin 'kien/ctrlp.vim'
   Plugin 'ensime/ensime-vim'
+  Plugin 'fatih/vim-go'
+  Plugin 'nvie/vim-flake8'
   Plugin 'junegunn/vim-emoji'
   Plugin 'vim-scripts/AnsiEsc.vim'
   Plugin 'vim-scripts/tabmerge'
   Plugin 'airblade/vim-gitgutter'
   Plugin 'xolox/vim-misc'
   Plugin 'xolox/vim-notes'
+
+  Plugin 'giftig/vim-lucius'
 call vundle#end()
