@@ -36,9 +36,11 @@ nnoremap <leader>j :call GotoJump()<CR>
 nnoremap <leader>er :ReplaceEmojisOnLine<CR>
 nnoremap <leader>el <c-t>:PrintEmojis<CR>
 
+nnoremap <leader>b :Bash<space>
+
 " CUSTOM COMMANDS
-command FmtJson %!python -mjson.tool
-command FmtXml %!~/scripts/format_xml.py
+command! FmtJson %!python -mjson.tool
+command! FmtXml %!~/scripts/format_xml.py
 
 autocmd FileType json nnoremap <F7> :FmtJson<CR>
 autocmd FileType xml nnoremap <F7> :FmtXml<CR>
