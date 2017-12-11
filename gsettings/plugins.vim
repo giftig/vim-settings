@@ -8,7 +8,6 @@ call pathogen#helptags()
 " Install extra plugins with vundle
 call vundle#begin()
   Plugin 'kien/ctrlp.vim'
-  Plugin 'ensime/ensime-vim'
   Plugin 'fatih/vim-go'
   Plugin 'nvie/vim-flake8'
   Plugin 'junegunn/vim-emoji'
