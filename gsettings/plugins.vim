@@ -9,6 +9,7 @@ call pathogen#helptags()
 call vundle#begin()
   Plugin 'kien/ctrlp.vim'
   Plugin 'fatih/vim-go'
+  Plugin 'derekwyatt/vim-scala'
   Plugin 'nvie/vim-flake8'
   Plugin 'junegunn/vim-emoji'
   Plugin 'vim-scripts/AnsiEsc.vim'
