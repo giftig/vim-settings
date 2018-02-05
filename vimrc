@@ -10,9 +10,11 @@ source ~/.vim/gsettings/gitgutter.vim
 source ~/.vim/gsettings/nerdtree.vim
 
 " Useful utils
+source ~/.vim/gsettings/utils/bash.vim
 source ~/.vim/gsettings/utils/emoji-helper.vim
 source ~/.vim/gsettings/utils/git-buffers.vim
 source ~/.vim/gsettings/utils/goto-jump.vim
+source ~/.vim/gsettings/utils/mongo.vim
 source ~/.vim/gsettings/utils/quickfind.vim
 
 filetype plugin indent on
