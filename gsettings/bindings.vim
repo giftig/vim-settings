@@ -29,6 +29,9 @@ nnoremap <leader><right> :tabn<CR>
 " ,<up> and ,<down> = previous and next buffers in buffers list
 nnoremap <leader><up> :bn<CR>
 nnoremap <leader><down> :bp<CR>
+" ,n and ,N = next and previous quickfix list
+nnoremap <leader>n :cn<CR>
+nnoremap <leader>N :cp<CR>
 
 nnoremap <leader>j :call GotoJump()<CR>
 
