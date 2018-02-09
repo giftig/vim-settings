@@ -4,6 +4,7 @@ source ~/.vim/gsettings/display.vim
 source ~/.vim/gsettings/syntax.vim
 
 " Specific plugin config and hacks
+source ~/.vim/gsettings/notes.vim
 source ~/.vim/gsettings/ctrlp.vim
 source ~/.vim/gsettings/ensime.vim
 source ~/.vim/gsettings/gitgutter.vim
