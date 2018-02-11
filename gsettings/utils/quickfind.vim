@@ -9,6 +9,11 @@ endfunction
 " Quick open to the right line/col
 function! s:QuickOpen(mod, name)
   let f = s:Rstrip(s:QuickFind(a:mod, a:name, "-1 --coords"))
+  if f ==# ""
+    echom "QuickOpen: No results found for " . a:name
+    return
+  endif
+
   let pieces = split(f, ":")
   let fn = join(pieces[0:-3], ":")
   let lpos = pieces[-2]
@@ -27,6 +32,11 @@ endfunction
 " Simple quick open: searching for files, so no line/col to match
 function! s:QuickOpenFile(name)
   let f = s:Rstrip(s:QuickFind("f", a:name, "-1"))
+  if f ==# ""
+    echom "QuickOpen: No results found for " . a:name
+    return
+  endif
+
   exec "e " . f
 endfunction
 
