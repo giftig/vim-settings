@@ -40,9 +40,24 @@ function! s:QuickOpenFile(name)
   exec "e " . f
 endfunction
 
+" Look for classes or methods depending on what it looks like
+function! s:QuickOpenSmart(name)
+  if a:name[0] ==# tolower(a:name[0])
+    return s:QuickOpen("d", a:name)
+  endif
+
+  return s:QuickOpen("c", a:name)
+endfunction
+
+function! s:QuickOpenUnderCursor()
+  return s:QuickOpenSmart(expand("<cword>"))
+endfunction
+
 command! -nargs=1 Qoc call s:QuickOpen("c", "<args>")
 command! -nargs=1 Qod call s:QuickOpen("d", "<args>")
 command! -nargs=1 Qo call s:QuickOpenFile("<args>")
+command! -nargs=1 Qos call s:QuickOpenSmart("<args>")
+command! -nargs=0 Qouc call s:QuickOpenUnderCursor()
 
 command! -nargs=1 Qfc echo s:QuickFind("c", "<args>", "")
 command! -nargs=1 Qfd echo s:QuickFind("d", "<args>", "")
