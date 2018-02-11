@@ -6,6 +6,7 @@ function! s:QuickFind(mod, name, extra_flags)
   return system("~/scripts/quickfind " . a:extra_flags . " -" . a:mod . " " . a:name)
 endfunction
 
+" Quick open to the right line/col
 function! s:QuickOpen(mod, name)
   let f = s:Rstrip(s:QuickFind(a:mod, a:name, "-1 --coords"))
   let pieces = split(f, ":")
@@ -20,12 +21,18 @@ function! s:QuickOpen(mod, name)
   endif
 
   exec lpos
-  exec "normal! ^" . cpos . "l"
+  exec "normal! 0" . cpos . "l"
+endfunction
+
+" Simple quick open: searching for files, so no line/col to match
+function! s:QuickOpenFile(name)
+  let f = s:Rstrip(s:QuickFind("f", a:name, "-1"))
+  exec "e " . f
 endfunction
 
 command! -nargs=1 Qoc call s:QuickOpen("c", "<args>")
 command! -nargs=1 Qod call s:QuickOpen("d", "<args>")
-command! -nargs=1 Qo call s:QuickOpen("f", "<args>")
+command! -nargs=1 Qo call s:QuickOpenFile("<args>")
 
 command! -nargs=1 Qfc echo s:QuickFind("c", "<args>", "")
 command! -nargs=1 Qfd echo s:QuickFind("d", "<args>", "")
