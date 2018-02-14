@@ -41,9 +41,12 @@ nnoremap <leader>el <c-t>:PrintEmojis<CR>
 
 nnoremap <leader>b :Bash<space>
 
-" ,q = quick find current word (python and scala only
+" ,q = quick find current word (python and scala only)
+" ,u = quick find usages
 autocmd Filetype scala nnoremap <leader>q :Qouc<CR>
 autocmd Filetype python nnoremap <leader>q :Qouc<CR>
+autocmd Filetype scala nnoremap <leader>u :Qfuuc<CR>
+autocmd Filetype python nnoremap <leader>u :Qfuuc<CR>
 
 " CUSTOM COMMANDS
 command! FmtJson %!python -mjson.tool

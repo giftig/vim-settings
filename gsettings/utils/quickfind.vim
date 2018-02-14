@@ -53,6 +53,15 @@ function! s:QuickOpenUnderCursor()
   return s:QuickOpenSmart(expand("<cword>"))
 endfunction
 
+function! s:PopulateQuickList(mod, name)
+  cexpr s:QuickFind(a:mod, a:name, '--quickfix')
+endfunction
+
+function! s:UsagesUnderCursor()
+  call s:PopulateQuickList("u", expand("<cword>"))
+  copen
+endfunction
+
 command! -nargs=1 Qoc call s:QuickOpen("c", "<args>")
 command! -nargs=1 Qod call s:QuickOpen("d", "<args>")
 command! -nargs=1 Qo call s:QuickOpenFile("<args>")
@@ -62,3 +71,5 @@ command! -nargs=0 Qouc call s:QuickOpenUnderCursor()
 command! -nargs=1 Qfc echo s:QuickFind("c", "<args>", "")
 command! -nargs=1 Qfd echo s:QuickFind("d", "<args>", "")
 command! -nargs=1 Qf echo s:QuickFind("f", "<args>", "")
+command! -nargs=1 Qfu call s:PopulateQuickList("u", "<args>") | copen
+command! -nargs=0 Qfuuc call s:UsagesUnderCursor()
