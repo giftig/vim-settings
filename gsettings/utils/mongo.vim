@@ -16,4 +16,4 @@ function! s:FetchDoc(...)
   exec "FmtJson"
 endfunction
 
-command! -nargs=+ FetchDoc call s:FetchDoc(<q-args>)
+command! -nargs=+ FetchDoc call s:FetchDoc(<f-args>)
