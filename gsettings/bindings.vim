@@ -47,6 +47,7 @@ autocmd Filetype scala nnoremap <leader>q :Qouc<CR>
 autocmd Filetype python nnoremap <leader>q :Qouc<CR>
 autocmd Filetype scala nnoremap <leader>u :Qfuuc<CR>
 autocmd Filetype python nnoremap <leader>u :Qfuuc<CR>
+autocmd Filetype scala nnoremap <leader>i :Qfiuc<CR>
 
 " CUSTOM COMMANDS
 command! FmtJson %!python -mjson.tool

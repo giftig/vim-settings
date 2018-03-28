@@ -40,6 +40,17 @@ function! s:QuickOpenFile(name)
   exec "e " . f
 endfunction
 
+function! s:QuickImport(name)
+  let res = s:QuickFind("i", a:name, "-1 --clean-import")
+  if res ==# ""
+    echom "QuickImport: No results found for " . a:name
+    return
+  endif
+
+  let @q = res
+  echom "@q = " . res
+endfunction
+
 " Look for classes or methods depending on what it looks like
 function! s:QuickOpenSmart(name)
   if a:name[0] ==# tolower(a:name[0])
@@ -62,6 +73,10 @@ function! s:UsagesUnderCursor()
   copen
 endfunction
 
+function! s:QuickImportUnderCursor()
+  call s:QuickImport(expand("<cword>"))
+endfunction
+
 command! -nargs=1 Qoc call s:QuickOpen("c", "<args>")
 command! -nargs=1 Qod call s:QuickOpen("d", "<args>")
 command! -nargs=1 Qo call s:QuickOpenFile("<args>")
@@ -73,3 +88,4 @@ command! -nargs=1 Qfd echo s:QuickFind("d", "<args>", "")
 command! -nargs=1 Qf echo s:QuickFind("f", "<args>", "")
 command! -nargs=1 Qfu call s:PopulateQuickList("u", "<args>") | copen
 command! -nargs=0 Qfuuc call s:UsagesUnderCursor()
+command! -nargs=0 Qfiuc call s:QuickImportUnderCursor()
