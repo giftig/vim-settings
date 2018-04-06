@@ -3,7 +3,12 @@ function! s:Rstrip(string)
 endfunction
 
 function! s:QuickFind(mod, name, extra_flags)
-  return system("~/scripts/quickfind " . a:extra_flags . " -" . a:mod . " " . a:name)
+  let res = system("~/scripts/quickfind " . a:extra_flags . " -" . a:mod . " " . a:name)
+  if v:shell_error !=# 0
+    echom("Quickfind error: " . res)
+    return ""
+  endif
+  return res
 endfunction
 
 " Quick open to the right line/col
