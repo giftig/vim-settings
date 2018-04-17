@@ -23,9 +23,9 @@ nnoremap <leader><space> :%s/\v\s+$//<CR>
 " ,g = load changed files since last git commit
 nnoremap <leader>g :LoadChangedFiles 1<CR>
 
-" ,<left> and ,<right> = left and right through tabs
-nnoremap <leader><left> :tabp<CR>
-nnoremap <leader><right> :tabn<CR>
+" ,<left> and ,<right> = left and right in jump list
+nnoremap <leader><left> <c-o>
+nnoremap <leader><right> <c-I>
 " ,<up> and ,<down> = previous and next buffers in buffers list
 nnoremap <leader><up> :bn<CR>
 nnoremap <leader><down> :bp<CR>
