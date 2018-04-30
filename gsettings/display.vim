@@ -36,3 +36,6 @@ if has("gui_running")
     autocmd VimEnter *.xml set lines=60 columns=105
   endif
 endif
+
+" No bells
+autocmd! VimEnter * set vb t_vb=
