@@ -17,6 +17,7 @@ call vundle#begin()
   Plugin 'airblade/vim-gitgutter'
   Plugin 'xolox/vim-misc'
   Plugin 'xolox/vim-notes'
+  Plugin 'rodjek/vim-puppet'
 
   Plugin 'giftig/vim-lucius'
 call vundle#end()
