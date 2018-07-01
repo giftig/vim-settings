@@ -52,8 +52,8 @@ function! s:QuickImport(name)
     return
   endif
 
-  let @q = res
-  echom "@q = " . res
+  let @" = res
+  echom "Found " . res
 endfunction
 
 " Look for classes or methods depending on what it looks like
