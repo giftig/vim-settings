@@ -1,22 +1,22 @@
-source ~/.vim/gsettings/plugins.vim
-source ~/.vim/gsettings/bindings.vim
-source ~/.vim/gsettings/display.vim
-source ~/.vim/gsettings/syntax.vim
+runtime gsettings/plugins.vim
+runtime gsettings/bindings.vim
+runtime gsettings/display.vim
+runtime gsettings/syntax.vim
 
 " Specific plugin config and hacks
-source ~/.vim/gsettings/notes.vim
-source ~/.vim/gsettings/ctrlp.vim
-source ~/.vim/gsettings/ensime.vim
-source ~/.vim/gsettings/gitgutter.vim
-source ~/.vim/gsettings/nerdtree.vim
+runtime gsettings/notes.vim
+runtime gsettings/ctrlp.vim
+runtime gsettings/ensime.vim
+runtime gsettings/gitgutter.vim
+runtime gsettings/nerdtree.vim
 
 " Useful utils
-source ~/.vim/gsettings/utils/bash.vim
-source ~/.vim/gsettings/utils/emoji-helper.vim
-source ~/.vim/gsettings/utils/git-buffers.vim
-source ~/.vim/gsettings/utils/goto-jump.vim
-source ~/.vim/gsettings/utils/mongo.vim
-source ~/.vim/gsettings/utils/quickfind.vim
+runtime gsettings/utils/bash.vim
+runtime gsettings/utils/emoji-helper.vim
+runtime gsettings/utils/git-buffers.vim
+runtime gsettings/utils/goto-jump.vim
+runtime gsettings/utils/mongo.vim
+runtime gsettings/utils/quickfind.vim
 
 filetype plugin indent on
 syntax on

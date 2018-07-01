@@ -13,7 +13,7 @@ autocmd FileType scala setlocal cc=100
 autocmd FileType java setlocal cc=100
 
 autocmd BufRead,BufNewFile *.thrift set filetype=thrift
-autocmd Syntax thrift source ~/.vim/syntax/thrift.vim
+autocmd Syntax thrift runtime syntax/thrift.vim
 
 " Configuration for go-vim
 let g:go_fmt_autosave = 1
