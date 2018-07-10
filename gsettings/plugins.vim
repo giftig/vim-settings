@@ -20,5 +20,6 @@ call vundle#begin()
   Plugin 'rodjek/vim-puppet'
   Plugin 'GEverding/vim-hocon'
 
+  Plugin 'giftig/vim-log-syntax'
   Plugin 'giftig/vim-lucius'
 call vundle#end()
