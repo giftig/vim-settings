@@ -19,6 +19,8 @@ call vundle#begin()
   Plugin 'xolox/vim-notes'
   Plugin 'rodjek/vim-puppet'
   Plugin 'GEverding/vim-hocon'
+  Plugin 'vim-scripts/toggle_comment'
+  Plugin 'scrooloose/nerdtree'
 
   Plugin 'giftig/vim-log-syntax'
   Plugin 'giftig/vim-lucius'
