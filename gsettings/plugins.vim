@@ -7,20 +7,23 @@ call pathogen#helptags()
 
 " Install extra plugins with vundle
 call vundle#begin()
-  Plugin 'kien/ctrlp.vim'
-  Plugin 'fatih/vim-go'
-  Plugin 'derekwyatt/vim-scala'
-  Plugin 'nvie/vim-flake8'
-  Plugin 'junegunn/vim-emoji'
-  Plugin 'vim-scripts/AnsiEsc.vim'
-  Plugin 'vim-scripts/tabmerge'
+  Plugin 'GEverding/vim-hocon'
   Plugin 'airblade/vim-gitgutter'
+  Plugin 'derekwyatt/vim-scala'
+  Plugin 'fatih/vim-go'
+  Plugin 'junegunn/vim-emoji'
+  Plugin 'kien/ctrlp.vim'
+  Plugin 'nvie/vim-flake8'
+  Plugin 'rodjek/vim-puppet'
+  Plugin 'scrooloose/nerdtree'
+
   Plugin 'xolox/vim-misc'
   Plugin 'xolox/vim-notes'
-  Plugin 'rodjek/vim-puppet'
-  Plugin 'GEverding/vim-hocon'
+
+  Plugin 'vim-scripts/AnsiEsc.vim'
+  Plugin 'vim-scripts/highlight.vim'
+  Plugin 'vim-scripts/tabmerge'
   Plugin 'vim-scripts/toggle_comment'
-  Plugin 'scrooloose/nerdtree'
 
   Plugin 'giftig/vim-log-syntax'
   Plugin 'giftig/vim-lucius'

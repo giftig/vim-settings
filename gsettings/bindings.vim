@@ -32,6 +32,10 @@ nnoremap <leader><down> :bp<CR>
 " ,n and ,N = next and previous quickfix list
 nnoremap <leader>n :cn<CR>
 nnoremap <leader>N :cp<CR>
+" ,h and ,H: create and clear highlights (highlight.vim)
+nmap <leader>h <C-h><C-w>
+vmap <leader>h <C-h><C-h>
+nmap <leader>H <C-h><C-n>
 
 nnoremap <leader>j :call GotoJump()<CR>
 
