@@ -6,7 +6,7 @@ function! s:LoadChangedFiles(...)
   else
     let numCommits = 1
   endif
-  let changedFilesRaw = system("git diff HEAD~" . numCommits . " --name-only")
+  let changedFilesRaw = system("git diff HEAD~" . numCommits . " --name-only --diff-filter d")
   let changedFiles = split(changedFilesRaw, "\n")
 
   for f in changedFiles
