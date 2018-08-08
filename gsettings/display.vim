@@ -23,7 +23,7 @@ set splitbelow
 
 " Large if requested, or else filetype-specific
 if has("gui_running")
-  set lines=60 columns=240
+  autocmd VimEnter * set lines=60 columns=120
 
   " Always wide if we're in diff-mode
   if !&diff
@@ -38,4 +38,4 @@ if has("gui_running")
 endif
 
 " No bells
-autocmd! VimEnter * set vb t_vb=
+autocmd VimEnter * set vb t_vb=
