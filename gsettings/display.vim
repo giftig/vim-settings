@@ -21,20 +21,16 @@ set wildchar=<tab> wildmenu wildmode=full
 set splitright
 set splitbelow
 
-" Large if requested, or else filetype-specific
-if has("gui_running")
-  autocmd VimEnter * set lines=60 columns=120
+autocmd GUIEnter * set lines=60 columns=120
 
-  " Always wide if we're in diff-mode
-  if !&diff
-    autocmd VimEnter *.py set lines=60 columns=85
-    autocmd VimEnter *.scala set lines=60 columns=105
-    autocmd VimEnter *.go set lines=60 columns=105
-    autocmd VimEnter *.thrift set lines=60 columns=105
-    autocmd VimEnter *.java set lines=60 columns=105
-    autocmd VimEnter *.js set lines=60 columns=105
-    autocmd VimEnter *.xml set lines=60 columns=105
-  endif
+if !&diff
+  autocmd GUIEnter *.py set lines=60 columns=85
+  autocmd GUIEnter *.scala set lines=60 columns=105
+  autocmd GUIEnter *.go set lines=60 columns=105
+  autocmd GUIEnter *.thrift set lines=60 columns=105
+  autocmd GUIEnter *.java set lines=60 columns=105
+  autocmd GUIEnter *.js set lines=60 columns=105
+  autocmd GUIEnter *.xml set lines=60 columns=105
 endif
 
 " No bells
