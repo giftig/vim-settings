@@ -4,8 +4,8 @@ map <c-t> <ESC>:tabnew<CR>
 set mouse=a
 set nohlsearch
 
-colorscheme lucius
-LuciusDark
+silent! colorscheme lucius
+silent! LuciusDark
 
 set t_Co=256 " Colours in terminal vim in linux
 

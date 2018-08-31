@@ -16,6 +16,7 @@ call vundle#begin()
   Plugin 'nvie/vim-flake8'
   Plugin 'rodjek/vim-puppet'
   Plugin 'scrooloose/nerdtree'
+  Plugin 'tpope/vim-cucumber'
 
   Plugin 'xolox/vim-misc'
   Plugin 'xolox/vim-notes'
@@ -24,6 +25,7 @@ call vundle#begin()
   Plugin 'vim-scripts/highlight.vim'
   Plugin 'vim-scripts/tabmerge'
   Plugin 'vim-scripts/toggle_comment'
+  Plugin 'vim-python/python-syntax'
 
   Plugin 'giftig/vim-log-syntax'
   Plugin 'giftig/vim-lucius'
