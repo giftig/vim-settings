@@ -29,4 +29,5 @@ call vundle#begin()
 
   Plugin 'giftig/vim-log-syntax'
   Plugin 'giftig/vim-lucius'
+  Plugin 'giftig/python.vim'
 call vundle#end()
