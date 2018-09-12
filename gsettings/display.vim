@@ -31,6 +31,9 @@ if !&diff
   autocmd GUIEnter *.java set lines=60 columns=105
   autocmd GUIEnter *.js set lines=60 columns=105
   autocmd GUIEnter *.xml set lines=60 columns=105
+else
+  " Superwide for diff mode
+  autocmd GUIEnter * set lines=60 columns=210
 endif
 
 " No bells
