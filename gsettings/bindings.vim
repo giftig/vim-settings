@@ -36,8 +36,11 @@ nnoremap <leader>N :cp<CR>
 nmap <leader>h <C-h><C-w>
 vmap <leader>h <C-h><C-h>
 nmap <leader>H <C-h><C-n>
+" ,f runs fzf
+nnoremap <leader>f :FZF<CR>
 
 nnoremap <leader>j :call GotoJump()<CR>
+
 
 " ,e = autoreplace emoji on the current line
 nnoremap <leader>er :ReplaceEmojisOnLine<CR>
