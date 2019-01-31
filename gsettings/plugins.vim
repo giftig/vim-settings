@@ -17,6 +17,7 @@ call vundle#begin()
   Plugin 'rodjek/vim-puppet'
   Plugin 'scrooloose/nerdtree'
   Plugin 'tpope/vim-cucumber'
+  Plugin 'chrisbra/csv.vim'
 
   Plugin 'xolox/vim-misc'
   Plugin 'xolox/vim-notes'
