@@ -12,6 +12,7 @@ runtime gsettings/nerdtree.vim
 
 " Useful utils
 runtime gsettings/utils/bash.vim
+runtime gsettings/utils/color-switcher.vim
 runtime gsettings/utils/emoji-helper.vim
 runtime gsettings/utils/git-buffers.vim
 runtime gsettings/utils/goto-jump.vim

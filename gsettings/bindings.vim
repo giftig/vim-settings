@@ -38,6 +38,8 @@ vmap <leader>h <C-h><C-h>
 nmap <leader>H <C-h><C-n>
 " ,f runs fzf
 nnoremap <leader>f :FZF<CR>
+",c cycles through my favourite colour schemes
+nnoremap <leader>c :CycleColorScheme<CR>
 
 nnoremap <leader>j :call GotoJump()<CR>
 
