@@ -67,6 +67,3 @@ autocmd FileType xml nnoremap <F7> :FmtXml<CR>
 
 " Create a groupId / artifactId / version block for POMs using F8
 autocmd FileType xml nnoremap <F8> <ESC>o<groupId></groupId><CR><artifactId></artifactId><CR><version></version><ESC><UP><UP>Bew<RIGHT>
-
-" Write the file with `sudo tee` if using W to get around permission issues
-command W sil exec 'w !sudo tee ' . shellescape(@%, 1) . ' >/dev/null'
