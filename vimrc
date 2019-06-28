@@ -7,6 +7,7 @@ runtime gsettings/syntax.vim
 runtime gsettings/notes.vim
 runtime gsettings/ctrlp.vim
 runtime gsettings/ensime.vim
+runtime gsettings/fzf.vim
 runtime gsettings/gitgutter.vim
 runtime gsettings/nerdtree.vim
 

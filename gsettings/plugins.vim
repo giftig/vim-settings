@@ -18,6 +18,7 @@ call vundle#begin()
   Plugin 'scrooloose/nerdtree'
   Plugin 'tpope/vim-cucumber'
   Plugin 'chrisbra/csv.vim'
+  Plugin 'junegunn/fzf.vim'
 
   Plugin 'xolox/vim-misc'
   Plugin 'xolox/vim-notes'
