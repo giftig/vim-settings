@@ -21,4 +21,5 @@ runtime gsettings/utils/mongo.vim
 runtime gsettings/utils/quickfind.vim
 
 filetype plugin indent on
+set nomodeline
 syntax on

@@ -28,6 +28,8 @@ call vundle#begin()
   Plugin 'vim-scripts/toggle_comment'
   Plugin 'vim-python/python-syntax'
 
+  Plugin 'vim-scripts/oceandeep'
+
   Plugin 'giftig/vim-log-syntax'
   Plugin 'giftig/vim-lucius'
   Plugin 'giftig/python.vim'
