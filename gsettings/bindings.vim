@@ -36,8 +36,6 @@ nnoremap <leader>N :cp<CR>
 nmap <leader>h <C-h><C-w>
 vmap <leader>h <C-h><C-h>
 nmap <leader>H <C-h><C-n>
-" ,f runs fzf
-nnoremap <leader>f :FZF<CR>
 ",c cycles through my favourite colour schemes
 nnoremap <leader>c :CycleColorScheme<CR>
 
@@ -48,7 +46,13 @@ nnoremap <leader>j :call GotoJump()<CR>
 nnoremap <leader>er :ReplaceEmojisOnLine<CR>
 nnoremap <leader>el <c-t>:PrintEmojis<CR>
 
-nnoremap <leader>b :Bash<space>
+nnoremap <leader>B :Bash<space>
+
+" FZF bindings
+nnoremap <leader>f :FZF<CR>
+nnoremap <leader>b :Buffers<CR>
+nnoremap <leader>s :Lines<CR>
+nnoremap <leader>m :Marks<CR>
 
 " ,q = quick find current word (python and scala only)
 " ,u = quick find usages
