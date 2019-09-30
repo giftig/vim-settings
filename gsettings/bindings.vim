@@ -69,5 +69,9 @@ command! FmtXml %!~/scripts/format/xml
 autocmd FileType json nnoremap <F7> :FmtJson<CR>
 autocmd FileType xml nnoremap <F7> :FmtXml<CR>
 
+" Shortcut to fix syntax sync issues which sometimes occur with very large
+" heredocs and the like
+nnoremap <F12> :syntax sync fromstart<CR>
+
 " Create a groupId / artifactId / version block for POMs using F8
 autocmd FileType xml nnoremap <F8> <ESC>o<groupId></groupId><CR><artifactId></artifactId><CR><version></version><ESC><UP><UP>Bew<RIGHT>
