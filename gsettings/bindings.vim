@@ -64,7 +64,7 @@ autocmd Filetype scala nnoremap <leader>i :Qfiuc<CR>
 
 " CUSTOM COMMANDS
 command! FmtJson %!python -mjson.tool
-command! FmtXml %!~/scripts/format/xml.py
+command! FmtXml %!~/scripts/format/xml
 
 autocmd FileType json nnoremap <F7> :FmtJson<CR>
 autocmd FileType xml nnoremap <F7> :FmtXml<CR>
