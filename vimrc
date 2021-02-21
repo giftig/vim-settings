@@ -21,6 +21,8 @@ runtime gsettings/utils/goto-jump.vim
 runtime gsettings/utils/mongo.vim
 runtime gsettings/utils/quickfind.vim
 
+runtime gsettings/scala-package.vim
+
 filetype plugin indent on
 set nomodeline
 syntax on
