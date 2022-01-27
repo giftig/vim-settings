@@ -4,11 +4,12 @@ function! s:WriteNewScalaFile()
   let f = expand('%:p')
   echom 'Generating new empty scala file ' . f
 
+  " FIXME: This line doesn't work
   if !match(f, '\vsrc/[^/]+/scala')
     return
   endif
 
-  let short_path = substitute(f, '\v^.*src\/[^\/]+\/scala\/(.+)\/.*$', '\1', '')
+  let short_path = substitute(f, '\v^.*\/(scala|app)\/(.+)\/.*$', '\2', '')
   let package_line = 'package ' . substitute(short_path, '\v\/', '.', 'g')
   let obj_name = substitute(f, '\v.+\/(.+)\.scala$', '\1', '')
 
