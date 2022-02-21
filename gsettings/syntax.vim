@@ -4,6 +4,7 @@ set shiftwidth=2 softtabstop=2 tabstop=2
 
 " Some extra filetypes not understood by default
 autocmd BufRead,BufNewFile build.sbt set filetype=scala
+autocmd BufRead,BufNewFile *.scala.html set filetype=scala
 autocmd BufRead,BufNewFile *.sc set filetype=scala
 autocmd BufRead,BufNewFile Jenkinsfile set filetype=groovy
 
