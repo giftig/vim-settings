@@ -9,7 +9,7 @@ function! s:WriteNewScalaFile()
     return
   endif
 
-  let short_path = substitute(f, '\v^.*\/(scala|app)\/(.+)\/.*$', '\2', '')
+  let short_path = substitute(f, '\v^.*\/(scala|app|test)\/(.+)\/.*$', '\2', '')
   let package_line = 'package ' . substitute(short_path, '\v\/', '.', 'g')
   let obj_name = substitute(f, '\v.+\/(.+)\.scala$', '\1', '')
 
