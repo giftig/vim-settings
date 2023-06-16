@@ -19,6 +19,7 @@ call vundle#begin()
   Plugin 'tpope/vim-cucumber'
   Plugin 'chrisbra/csv.vim'
   Plugin 'junegunn/fzf.vim'
+  Plugin 'hashivim/vim-terraform'
 
   Plugin 'xolox/vim-misc'
   Plugin 'xolox/vim-notes'
