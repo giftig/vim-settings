@@ -64,9 +64,11 @@ autocmd Filetype scala nnoremap <leader>i :Qfiuc<CR>
 
 " CUSTOM COMMANDS
 command! FmtJson %!python -mjson.tool
+command! FmtSql %!sql-formatter-cli -i /dev/stdin -o /dev/stdout
 command! FmtXml %!~/scripts/format/xml
 
 autocmd FileType json nnoremap <F7> :FmtJson<CR>
+autocmd FileType sql nnoremap <F7> :FmtSql<CR>
 autocmd FileType xml nnoremap <F7> :FmtXml<CR>
 
 " Shortcut to fix syntax sync issues which sometimes occur with very large
