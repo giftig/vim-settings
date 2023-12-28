@@ -20,6 +20,7 @@ call vundle#begin()
   Plugin 'chrisbra/csv.vim'
   Plugin 'junegunn/fzf.vim'
   Plugin 'hashivim/vim-terraform'
+  Plugin 'rust-lang/rust.vim'
 
   Plugin 'xolox/vim-misc'
   Plugin 'xolox/vim-notes'
