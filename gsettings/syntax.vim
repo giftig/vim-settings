@@ -9,7 +9,7 @@ autocmd BufRead,BufNewFile *.sc set filetype=scala
 autocmd BufRead,BufNewFile Jenkinsfile set filetype=groovy
 
 " Soft tabs = 4 spaces for python, 2 for others
-autocmd FileType python setlocal shiftwidth=4 softtabstop=4 cc=80
+autocmd FileType python setlocal shiftwidth=4 softtabstop=4 cc=89
 autocmd FileType scala setlocal cc=100
 autocmd FileType java setlocal cc=100
 
