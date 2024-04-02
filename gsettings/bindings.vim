@@ -63,7 +63,7 @@ autocmd Filetype python nnoremap <leader>u :Qfuuc<CR>
 autocmd Filetype scala nnoremap <leader>i :Qfiuc<CR>
 
 " CUSTOM COMMANDS
-command! FmtJson %!python -mjson.tool
+command! FmtJson %!python -mjson.tool --indent 2 --sort-keys
 command! FmtSql %!sql-formatter-cli -i /dev/stdin -o /dev/stdout
 command! FmtXml %!~/scripts/format/xml
 
