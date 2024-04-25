@@ -10,6 +10,7 @@ runtime gsettings/ensime.vim
 runtime gsettings/fzf.vim
 runtime gsettings/gitgutter.vim
 runtime gsettings/nerdtree.vim
+runtime gsettings/rest-console.vim
 
 " Useful utils
 runtime gsettings/utils/bash.vim

@@ -33,6 +33,8 @@ call vundle#begin()
 
   Plugin 'vim-scripts/oceandeep'
 
+  Plugin 'diepm/vim-rest-console'
+
   Plugin 'giftig/vim-log-syntax'
   Plugin 'giftig/vim-lucius'
   Plugin 'giftig/python.vim'
