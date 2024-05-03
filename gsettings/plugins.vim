@@ -21,6 +21,7 @@ call vundle#begin()
   Plugin 'junegunn/fzf.vim'
   Plugin 'hashivim/vim-terraform'
   Plugin 'rust-lang/rust.vim'
+  Plugin 'leafOfTree/vim-vue-plugin'
 
   Plugin 'xolox/vim-misc'
   Plugin 'xolox/vim-notes'
