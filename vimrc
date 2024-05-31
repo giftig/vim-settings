@@ -17,6 +17,7 @@ runtime gsettings/utils/bash.vim
 runtime gsettings/utils/color-switcher.vim
 runtime gsettings/utils/embiggen.vim
 runtime gsettings/utils/emoji-helper.vim
+runtime gsettings/utils/gh.vim
 runtime gsettings/utils/git-buffers.vim
 runtime gsettings/utils/goto-jump.vim
 runtime gsettings/utils/mongo.vim

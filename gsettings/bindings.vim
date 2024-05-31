@@ -62,6 +62,9 @@ autocmd Filetype scala nnoremap <leader>u :Qfuuc<CR>
 autocmd Filetype python nnoremap <leader>u :Qfuuc<CR>
 autocmd Filetype scala nnoremap <leader>i :Qfiuc<CR>
 
+" ,l = link to github, current line in file (on master branch)
+nnoremap <leader>l :GhViewLine<CR>
+
 " CUSTOM COMMANDS
 command! FmtJson %!python -mjson.tool --indent 2 --sort-keys
 command! FmtSql %!sql-formatter-cli -i /dev/stdin -o /dev/stdout
