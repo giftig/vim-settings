@@ -8,7 +8,3 @@ let g:vrc_auto_format_response_patterns = {
   \'json': 'python -m json.tool --indent 2',
   \'xml': '~/scripts/format/xml',
 \}
-
-" Save and restore folds in *.rest automatically
-autocmd BufWinLeave *.rest mkview
-autocmd BufWinEnter *.rest silent loadview
