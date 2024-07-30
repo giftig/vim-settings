@@ -67,7 +67,8 @@ nnoremap <leader>l :GhViewLine<CR>
 
 " CUSTOM COMMANDS
 command! FmtJson %!python -mjson.tool --indent 2 --sort-keys
-command! FmtSql %!sql-formatter-cli -i /dev/stdin -o /dev/stdout
+" Depends on sql-formatter from npm
+command! FmtSql %!sql-formatter /dev/stdin -o /dev/stdout
 command! FmtXml %!~/scripts/format/xml
 
 autocmd FileType json nnoremap <F7> :FmtJson<CR>
