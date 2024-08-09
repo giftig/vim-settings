@@ -2,6 +2,10 @@
 set expandtab
 set shiftwidth=2 softtabstop=2 tabstop=2
 
+" Enable syntax folding but ensure all folds start open
+set foldmethod=syntax
+set foldlevelstart=99
+
 " Some extra filetypes not understood by default
 autocmd BufRead,BufNewFile build.sbt set filetype=scala
 autocmd BufRead,BufNewFile *.scala.html set filetype=scala
