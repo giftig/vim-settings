@@ -54,12 +54,15 @@ nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>s :Lines<CR>
 nnoremap <leader>m :Marks<CR>
 
-" ,q = quick find current word (python and scala only)
+" ,q = quick find current word (in python, rust or scala)
 " ,u = quick find usages
+" ,i = quick write import based on previous usage (scala only)
 autocmd Filetype scala nnoremap <leader>q :Qouc<CR>
 autocmd Filetype python nnoremap <leader>q :Qouc<CR>
+autocmd Filetype rust nnoremap <leader>q :Qouc<CR>
 autocmd Filetype scala nnoremap <leader>u :Qfuuc<CR>
 autocmd Filetype python nnoremap <leader>u :Qfuuc<CR>
+autocmd Filetype rust nnoremap <leader>u :Qfuuc<CR>
 autocmd Filetype scala nnoremap <leader>i :Qfiuc<CR>
 
 " ,l = link to github, current line in file (on master branch)
