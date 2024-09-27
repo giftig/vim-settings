@@ -64,6 +64,8 @@ autocmd Filetype scala nnoremap <leader>u :Qfuuc<CR>
 autocmd Filetype python nnoremap <leader>u :Qfuuc<CR>
 autocmd Filetype rust nnoremap <leader>u :Qfuuc<CR>
 autocmd Filetype scala nnoremap <leader>i :Qfiuc<CR>
+autocmd Filetype python nnoremap <leader>i :Qfiuc<CR>
+autocmd Filetype rust nnoremap <leader>i :Qfiuc<CR>
 
 " ,l = link to github, current line in file (on master branch)
 nnoremap <leader>l :GhViewLine<CR>

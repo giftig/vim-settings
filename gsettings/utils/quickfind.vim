@@ -47,7 +47,7 @@ function! s:QuickOpenFile(name)
 endfunction
 
 function! s:QuickImport(name)
-  let res = s:QuickFind("import", a:name, "-1 -o clean-imports")
+  let res = s:QuickFind("import", a:name, "-1 -o import")
   if res ==# ""
     echom "QuickImport: No results found for " . a:name
     return
