@@ -16,6 +16,7 @@ autocmd BufRead,BufNewFile Jenkinsfile set filetype=groovy
 autocmd FileType python setlocal shiftwidth=4 softtabstop=4 cc=89
 autocmd FileType scala setlocal cc=100
 autocmd FileType java setlocal cc=100
+autocmd FileType rust setlocal cc=100
 
 autocmd BufRead,BufNewFile *.thrift set filetype=thrift
 autocmd Syntax thrift runtime syntax/thrift.vim
