@@ -38,3 +38,9 @@ endif
 
 " No bells
 autocmd VimEnter * set vb t_vb=
+
+" Default font size seems to have changed in gvim 9.1 so make sure it's set
+" to a less enormous size by default
+if has("gui_running")
+  set guifont=Monospace
+endif

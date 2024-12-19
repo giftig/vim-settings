@@ -1,10 +1,11 @@
 function! s:ToggleEmbiggen()
-  let fontsize = 15
+  let small='Monospace'
+  let big='Monospace 15'
 
-  if &guifont ==# ""
-    let &guifont='Monospace ' . fontsize
+  if &guifont ==# small
+    let &guifont=big
   else
-    set guifont=
+    let &guifont=small
   endif
 endfunction
 
