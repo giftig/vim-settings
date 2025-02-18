@@ -13,26 +13,23 @@ endfunction
 
 " Quick open to the right line/col
 function! s:QuickOpen(mode, name)
-  let f = s:Rstrip(s:QuickFind(a:mode, a:name, "-1 -o coords"))
-  if f ==# ""
+  let res = s:Rstrip(s:QuickFind(a:mode, a:name, "-1 -o coords"))
+  if res ==# ""
     echom "QuickOpen: No results found for " . a:name
     return
   endif
 
-  let pieces = split(f, ":")
-  let fn = join(pieces[0:-3], ":")
-  let lpos = pieces[-2]
+  let pieces = split(res, ":")
+
+  " Just in case the filename contained a colon
+  let filename = join(pieces[0:-3], ":")
+  let line = pieces[-2]
   " qf / ag return 1-indexed col numbers, so subtract 1
-  let cpos = max([0, str2nr(pieces[-1]) - 1])
+  let col = max([0, str2nr(pieces[-1]) - 1])
 
-  exec "e " . fn
+  exec "e " . filename
 
-  if fn ==# lpos || fn ==# cpos
-    return
-  endif
-
-  exec lpos
-  exec "normal! 0" . cpos . "l"
+  call cursor(line, col)
 endfunction
 
 " Simple quick open: searching for files, so no line/col to match
