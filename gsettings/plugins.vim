@@ -10,7 +10,7 @@ call vundle#begin()
   Plugin 'GEverding/vim-hocon'
   Plugin 'airblade/vim-gitgutter'
   Plugin 'derekwyatt/vim-scala'
-  Plugin 'fatih/vim-go'
+  Plugin 'charlespascoe/vim-go-syntax'
   Plugin 'junegunn/vim-emoji'
   Plugin 'kien/ctrlp.vim'
   Plugin 'nvie/vim-flake8'
@@ -22,6 +22,7 @@ call vundle#begin()
   Plugin 'hashivim/vim-terraform'
   Plugin 'rust-lang/rust.vim'
   Plugin 'leafOfTree/vim-vue-plugin'
+  Plugin 'martinda/Jenkinsfile-vim-syntax'
 
   Plugin 'xolox/vim-misc'
   Plugin 'xolox/vim-notes'
