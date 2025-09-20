@@ -10,7 +10,7 @@ call vundle#begin()
   Plugin 'GEverding/vim-hocon'
   Plugin 'airblade/vim-gitgutter'
   Plugin 'derekwyatt/vim-scala'
-  Plugin 'charlespascoe/vim-go-syntax'
+  Plugin 'fatih/vim-go'
   Plugin 'junegunn/vim-emoji'
   Plugin 'kien/ctrlp.vim'
   Plugin 'nvie/vim-flake8'
