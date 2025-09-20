@@ -55,13 +55,8 @@ function! s:QuickImport(name)
 endfunction
 
 " Look for classes or methods depending on what it looks like
-" TODO: this would be better built into the qf app
 function! s:QuickOpenSmart(name)
-  if a:name[0] ==# tolower(a:name[0])
-    return s:QuickOpen("function", a:name)
-  endif
-
-  return s:QuickOpen("class", a:name)
+  return s:QuickOpen("smart", a:name)
 endfunction
 
 function! s:QuickOpenUnderCursor()
