@@ -23,6 +23,7 @@ call vundle#begin()
   Plugin 'rust-lang/rust.vim'
   Plugin 'leafOfTree/vim-vue-plugin'
   Plugin 'martinda/Jenkinsfile-vim-syntax'
+  Plugin 'jasdel/vim-smithy'
 
   Plugin 'xolox/vim-misc'
   Plugin 'xolox/vim-notes'
