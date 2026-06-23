@@ -43,4 +43,6 @@ autocmd VimEnter * set vb t_vb=
 " to a less enormous size by default
 if has("gui_running")
   set guifont=Monospace
+  set guioptions -=T
+  set guioptions -=m
 endif
