@@ -3,7 +3,12 @@ function! s:Rstrip(string)
 endfunction
 
 function! s:QuickFind(mode, name, extra_flags)
-  let res = system("qf " . a:extra_flags . " -m" . a:mode . " --lang " . &ft . " " . a:name)
+  let ft = &ft
+  if ft ==# "javascript" || ft ==# "typescript" || ft ==# "ts"
+    let ft = "js"
+  endif
+
+  let res = system("qf " . a:extra_flags . " -m" . a:mode . " --lang " . ft . " " . a:name)
   if v:shell_error !=# 0
     echom("Quickfind error: " . res)
     return ""

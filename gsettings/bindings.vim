@@ -57,18 +57,13 @@ nnoremap <leader>m :Marks<CR>
 " ,q = quick find current word
 " ,u = quick find usages
 " ,i = quick write import based on previous usage
-autocmd Filetype scala nnoremap <leader>q :Qouc<CR>
-autocmd Filetype python nnoremap <leader>q :Qouc<CR>
-autocmd Filetype rust nnoremap <leader>q :Qouc<CR>
-autocmd Filetype go nnoremap <leader>q :Qouc<CR>
-autocmd Filetype scala nnoremap <leader>u :Qfuuc<CR>
-autocmd Filetype python nnoremap <leader>u :Qfuuc<CR>
-autocmd Filetype rust nnoremap <leader>u :Qfuuc<CR>
-autocmd Filetype go nnoremap <leader>u :Qfuuc<CR>
-autocmd Filetype scala nnoremap <leader>i :Qfiuc<CR>
-autocmd Filetype python nnoremap <leader>i :Qfiuc<CR>
-autocmd Filetype rust nnoremap <leader>i :Qfiuc<CR>
-autocmd Filetype go nnoremap <leader>i :Qfiuc<CR>
+function SetQfBindings()
+  nnoremap <leader>q :Qouc<CR>
+  nnoremap <leader>u :Qfuuc<CR>
+  nnoremap <leader>i :Qfiuc<CR>
+endfunction
+
+autocmd Filetype scala,python,rust,go,javascript,typescript call SetQfBindings()
 
 " ,l = link to github, current line in file (on master branch)
 nnoremap <leader>l :GhViewLine<CR>
