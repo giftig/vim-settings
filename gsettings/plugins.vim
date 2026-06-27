@@ -24,6 +24,7 @@ call vundle#begin()
   Plugin 'leafOfTree/vim-vue-plugin'
   Plugin 'martinda/Jenkinsfile-vim-syntax'
   Plugin 'jasdel/vim-smithy'
+  Plugin 'othree/yajs.vim'
 
   Plugin 'xolox/vim-misc'
   Plugin 'xolox/vim-notes'
